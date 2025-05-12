@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Experiments - Animated</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="animated-bg">
+    <div class="floating-element" id="float1"></div>
+    <div class="floating-element" id="float2"></div>
+    <div class="floating-element" id="float3"></div>
+    <div class="floating-element" id="float4"></div>
+    <div class="floating-element" id="float5"></div>
+  </div>
+
+  <div class="container">
+    <div class="dev-tools-container">
+      <div class="dev-tools-header">
+        <div class="dev-tools-tabs">
+          <div class="dev-tab active">Elements</div>
+          <div class="dev-tab">Console</div>
+          <div class="dev-tab">Sources</div>
+          <div class="dev-tab">Network</div>
+        </div>
+        <div class="dev-tools-controls">
+          <div class="dev-control"></div>
+          <div class="dev-control"></div>
+          <div class="dev-control"></div>
+        </div>
+      </div>
+      <div class="dev-tools-sidebar">
+        <div class="dev-sidebar-item">HTML</div>
+        <div class="dev-sidebar-item">CSS</div>
+        <div class="dev-sidebar-item">JS</div>
+        <div class="dev-sidebar-item">XML</div>
+        <div class="dev-sidebar-item">XSL</div>
+      </div>
+      <div class="glowing-border">
+        <div class="code-element">/* Simple decorative code */</div>
+        <div class="code-element">// Web development elements</div>
+        <div class="code-element"># HTML, CSS, JS, XML, XSL</div>
+        <h1 class="neon-title">All Experiments</h1>
+        <div class="student-info">
+          <h2 class="blinking-text"><span class="code-symbol">&lt;/&gt;</span> WEB DEVELOPMENT ASSIGNMENT <span class="code-symbol">&lt;/&gt;</span></h2>
+          <p><span class="label">Name:</span> <span class="code-badge">{</span> Samruddhi Deshpande <span class="code-badge">}</span></p>
+          <p><span class="label">Roll No:</span> <span class="code-badge">#</span> 38. <span class="label">Div:</span> <span class="code-badge">B</span></p>
+        </div>
+        <select id="fileType" onchange="showFiles(this.value)" class="custom-select">
+          <option value="" disabled selected>Choose your file type</option>
+          <option value="html">HTML</option>
+          <option value="xml">XML</option>
+          <option value="xslt">XSLT</option>
+        </select>
+        <div id="htmlFiles" class="file-list">
+          <a href="assg 1.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 1</a>
+          <a href="assg 2.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 2</a>
+          <a href="assg 3.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 3</a>
+          <a href="assg 4.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 4</a>
+          <a href="assg 5.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 5</a>
+          <a href="assig 6.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 6</a>
+          <a href="assg 7.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 7</a>
+          <a href="assg 8.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 8</a>
+          <a href="assg 9.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 9</a>
+          <a href="assg 10.html" class="file-link"><span class="icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="file-icon"></span>Assignment 10</a>
+        </div>
+        <div id="xmlFiles" class="file-list">
+          <a href="data.xml" class="file-link"><span class="icon"><img src="https://www.svgrepo.com/show/31053/xml.svg" class="file-icon"></span>data.xml</a>
+          <a href="students.xml" class="file-link"><span class="icon"><img src="https://www.svgrepo.com/show/31053/xml.svg" class="file-icon"></span>students.xml</a>
+        </div>
+        <div id="xsltFiles" class="file-list">
+          <a href="style.xsl" class="file-link"><span class="icon"><img src="https://www.svgrepo.com/show/354465/xsl.svg" class="file-icon"></span>style.xsl</a>
+          <a href="student-style.xsl" class="file-link"><span class="icon"><img src="https://www.svgrepo.com/show/354465/xsl.svg" class="file-icon"></span>student-style.xsl</a>
+        </div>
+      </div>
+      <div class="dev-tools-footer">
+        <div class="dev-footer-status">Ready</div>
+        <div class="dev-footer-controls">
+          <div class="dev-footer-item">Console</div>
+          <div class="dev-footer-item">Elements</div>
+          <div class="dev-footer-item">⚙️</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terminal-like popup container -->
+  <div class="overlay" id="overlay"></div>
+  <div class="terminal-popup" id="popup">
+    <div class="terminal-header">
+      <div class="terminal-title">Terminal</div>
+      <div class="terminal-controls">
+        <span class="terminal-btn minimize"></span>
+        <span class="terminal-btn maximize"></span>
+        <span class="terminal-btn close" onclick="closePopup()"></span>
+      </div>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-iframe-container">
+        <iframe class="terminal-iframe" id="popupIframe" style="display:none;"></iframe>
+      </div>
+      <div class="terminal-content" id="popupContent"></div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html> 

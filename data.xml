@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<employees>
+    <employee>
+        <id>101</id>
+        <name>Samruddhi Deshpande</name>
+        <department>HR</department>
+    </employee>
+    <employee>
+        <id>102</id>
+        <name>Sanika Parkhe</name>
+        <department>IT</department>
+    </employee>
+</employees>
